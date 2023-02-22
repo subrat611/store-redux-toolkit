@@ -8,7 +8,7 @@ export default function NavBar() {
     <div className="wrapper">
       <nav className="navbar-wrapper">
         <span className="nav-logo">
-          <Logo />
+          Redux <Logo />
         </span>
         <ul className="nav-lists">
           <li className="nav-list">
