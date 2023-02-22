@@ -11,12 +11,12 @@ export default function NavBar() {
           Redux <Logo />
         </span>
         <ul className="nav-lists">
-          <li className="nav-list">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="nav-list">
-            <Link to="/shop">Shop</Link>
-          </li>
+          <Link to="/">
+            <li className="nav-list">Home</li>
+          </Link>
+          <Link to="/shop">
+            <li className="nav-list">Shop</li>
+          </Link>
           <li className="nav-list nav-cart">
             <ShoppingCart />
           </li>
