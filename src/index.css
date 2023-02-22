@@ -56,11 +56,30 @@ a {
   margin: 0 1rem;
 }
 
+.nav-cart {
+  position: relative;
+}
+
 .nav-cart svg {
   height: 30px;
   width: 30px;
   cursor: pointer;
 }
+
+.cart-item-counter {
+  position: absolute;   
+  top: -20%;
+  left: -20%;
+  background-color: #fb5607; 
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
 
 .nav-logo {
   height: 40px;
