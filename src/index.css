@@ -1,3 +1,8 @@
+:root {
+  --nav-bg: #f5f5f5;
+  --main-font: 'Montserrat', sans-serif;
+}
+
 html {
   box-sizing: border-box;
   font-size: 1rem;
@@ -19,5 +24,68 @@ li {
 }
 
 a {
+  color: #000000;
   text-decoration: none;
+}
+
+.wrapper {
+  padding: 0 5%;
+}
+
+
+.wrapper .navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+  font-weight: bold;
+  padding: 0 1.5rem;
+  background-color: var(--nav-bg);
+  border-radius: 3px;
+}
+
+.navbar-wrapper .nav-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-list {
+  margin: 0 1rem;
+}
+
+.nav-cart svg {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.nav-list,
+.nav-logo {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+
+.nav-list a:hover {
+  color: #444444;
+}
+
+@media all and (max-width: 774px) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .wrapper .navbar-wrapper {
+    font-size: 1rem;
+  }
+
 }
