@@ -1,0 +1,11 @@
+.home-wrapper  {
+    font-family: var(--main-font);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media all and (max-width: 774px) {
+    .home-wrapper {
+        font-size: 1rem;
+    }
+}
