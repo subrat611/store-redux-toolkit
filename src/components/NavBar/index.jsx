@@ -18,14 +18,13 @@ export default function NavBar() {
             <li className="nav-list">Home</li>
           </Link>
           <Link to="/shop">
-            <li className="nav-list">Shop</li>
+            <li className="nav-list nav-cart">
+              {itemCounter.length >= 0 ? (
+                <span className="cart-item-counter">{itemCounter.length}</span>
+              ) : null}
+              <ShoppingCart />
+            </li>
           </Link>
-          <li className="nav-list nav-cart">
-            {itemCounter.length >= 0 ? (
-              <span className="cart-item-counter">{itemCounter.length}</span>
-            ) : null}
-            <ShoppingCart />
-          </li>
         </ul>
       </nav>
       <Outlet />
